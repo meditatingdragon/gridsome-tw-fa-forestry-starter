@@ -1,0 +1,39 @@
+---
+label: 'Source '
+hide_body: true
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+  description: Author or name of publication
+- name: date
+  type: datetime
+  label: Date
+  description: Date Reviewed
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: display_
+  type: boolean
+  label: Display?
+  description: Show this source?
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
+  description: URL
+- name: notes
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Notes
+  description: Notes about this source.

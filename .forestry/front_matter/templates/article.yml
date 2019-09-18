@@ -1,0 +1,66 @@
+---
+label: Article
+hide_body: false
+fields:
+- name: preview_image
+  type: file
+  config:
+    maxSize: 250
+  label: Preview Image
+- name: author
+  type: text
+  config:
+    required: false
+  label: Author
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: published
+  type: boolean
+  label: Publish?
+  description: Is this ready to be published? Toggling on will display this on the
+    home page.
+- name: date
+  type: datetime
+  label: Date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: excerpt
+  type: textarea
+  default: ''
+  description: Short snippet that will show outside of the actual post
+  config:
+    required: true
+    wysiwyg: false
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+- type: tag_list
+  name: categories
+  label: Categories
+- name: source
+  type: field_group_list
+  fields:
+  - name: source
+    type: include
+    config: {}
+    template: source
+    label: Source
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sources
+pages:
+- articles/sample-blog-post-1.md
