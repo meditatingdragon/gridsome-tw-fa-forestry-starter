@@ -1,6 +1,12 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abfb4a7c-72ab-4b3c-9476-81faad445a2a/deploy-status)](https://app.netlify.com/sites/wizardly-payne-28c7e2/deploys)
+
 # Starter Template for Forestry + Gridsome + Tailwind + FontAwesome
 
 This is a starter project for a blog using Forestry, Gridsome, Tailwind CSS, and FontAwesome for Icons. 
+
+An example of this site can be found here:  
+
+https://wizardly-payne-28c7e2.netlify.com/
 
 # Default starter for Gridsome
 
